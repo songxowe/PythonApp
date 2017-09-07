@@ -19,3 +19,5 @@ Python + PyCharm + Git + Github:
 4.Settings... - Project Structure - src - Xxx.py
 
 5.Xxx.py 中右击 Run Xxx
+
+6.行号旁设置断点, Xxx.py 中右击 Debug Xxx 调试程序
