@@ -1,0 +1,21 @@
+
+Python + PyCharm + Git + Github:
+1.下载 Python
+  官网: https://www.python.org
+  downloads - windows - Latest Python 3 Release - Python 3.6.2 - Windows x86-64 executable installer
+
+  安装后检查 path:
+  cmd>python
+  >>> exit()
+
+2.下载 PyCharm
+  官网: https://www.jetbrains.com/pycharm/
+  download - Professional
+
+  安装后用 License Server 激活 http://xidea.online
+
+3.启动 PyCharm 设置主题 / 字体
+
+4.Settings... - Project Structure - src - Xxx.py
+
+5.Xxx.py 中右击 Run Xxx
