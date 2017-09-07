@@ -4,8 +4,10 @@ Python + PyCharm + Git + Github:
   官网: https://www.python.org
   downloads - windows - Latest Python 3 Release - Python 3.6.2 - Windows x86-64 executable installer
 
-  安装后检查 path:
-  cmd>python
+
+  安装时勾选 Add Python to environment variables
+  检查 path:
+  cmd>python -V
   >>> exit()
 
 2.下载 PyCharm
@@ -21,3 +23,25 @@ Python + PyCharm + Git + Github:
 5.Xxx.py 中右击 Run Xxx
 
 6.行号旁设置断点, Xxx.py 中右击 Debug Xxx 调试程序
+
+
+
+Python 是一款易于学习且功能强大的编程语言。 它具有高效率的数据结构，能够简单又
+有效地实现面向对象编程。Python 简洁的语法与动态输入之特性，加之其解释性语言的
+本质，使得它成为一种在多种领域与绝大多数平台都能进行脚本编写与应用快速开发工
+作的理想语言。
+
+Python 的创造者吉多·范罗苏姆（Guido van Rossum）
+Python = 蟒蛇
+
+Python 的特色:
+简单
+易于学习
+自由且开放
+高级语言
+跨平台性
+解释性
+面向对象
+可扩展性
+可嵌入性
+丰富的库
