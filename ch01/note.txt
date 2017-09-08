@@ -1,30 +1,5 @@
 
 Python + PyCharm + Git + Github:
-1.下载 Python
-  官网: https://www.python.org
-  downloads - windows - Latest Python 3 Release - Python 3.6.2 - Windows x86-64 executable installer
-
-
-  安装时勾选 Add Python to environment variables
-  检查 path:
-  cmd>python -V
-  >>> exit()
-
-2.下载 PyCharm
-  官网: https://www.jetbrains.com/pycharm/
-  download - Professional
-
-  安装后用 License Server 激活 http://xidea.online
-
-3.启动 PyCharm 设置主题 / 字体
-
-4.Settings... - Project Structure - src - Xxx.py
-
-5.Xxx.py 中右击 Run Xxx
-
-6.行号旁设置断点, Xxx.py 中右击 Debug Xxx 调试程序
-
-
 
 Python 是一款易于学习且功能强大的编程语言。 它具有高效率的数据结构，能够简单又
 有效地实现面向对象编程。Python 简洁的语法与动态输入之特性，加之其解释性语言的
@@ -45,3 +20,76 @@ Python 的特色:
 可扩展性
 可嵌入性
 丰富的库
+
+1.下载 Python
+  官网: https://www.python.org
+  downloads - windows - Latest Python 3 Release - Python 3.6.2 - Windows x86-64 executable installer
+
+
+  安装时勾选 Add Python to environment variables
+  检查 path:
+  cmd>python -V
+  >>>             - Python 解释器提示符（Python Interpreter Prompt）
+  >>> exit()
+
+Start Menu - Python - IDLE (Python 3.6 64-bit):
+Python 3.6.2 (v3.6.2:5fd33b5, Jul  8 2017, 04:57:36) [MSC v.1900 64 bit (AMD64)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> 3 + 4
+7
+>>> 3 * 20
+60
+>>> 8 + 2 * 10
+28
+>>> (8 + 2) * 10
+100
+>>> 18 / 4
+4.5
+>>> 18//4
+4
+>>> 18%4
+2
+>>> 5 * 5 * 5
+125
+>>> 5 ** 3
+125
+>>> tuna = 3
+>>> 20 + tuna
+23
+>>> bacon = 18
+>>> bacon / tuna
+6.0
+
+>>> Bucky Smith
+SyntaxError: invalid syntax
+>>> "Buck Smith"
+'Buck Smith'
+>>> 'Buck Smith'
+'Buck Smith'
+>>> 'I don't think this'
+SyntaxError: invalid syntax
+>>> "I don't think this"
+"I don't think this"
+>>> 'I don\'t think this'
+"I don't think this"
+>>> print('hey what is up?')
+hey what is up?
+>>> print("c:\my\newfile")
+c:\my
+ewfile
+>>>
+
+
+2.下载 PyCharm
+  官网: https://www.jetbrains.com/pycharm/
+  download - Professional
+
+  安装后用 License Server 激活 http://xidea.online
+
+3.启动 PyCharm 设置主题 / 字体
+
+4.Settings... - Project Structure - src - New - Python File - Xxx.py
+
+5.Xxx.py 中右击 Run Xxx
+
+6.行号旁设置断点, Xxx.py 中右击 Debug Xxx 调试程序
