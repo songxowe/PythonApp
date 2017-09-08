@@ -5,6 +5,7 @@
       <sourceFolder url="file://$MODULE_DIR$/ch01install/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ch02base/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ch03func/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ch04modules/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
