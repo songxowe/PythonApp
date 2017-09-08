@@ -1,4 +1,6 @@
 
+@Copyright by SONG
+
 Python + PyCharm + Git + Github:
 
 Python 是一款易于学习且功能强大的编程语言。 它具有高效率的数据结构，能够简单又
