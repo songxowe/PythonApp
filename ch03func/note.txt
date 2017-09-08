@@ -1,0 +1,102 @@
+
+@Copyright by SONG
+
+控制流
+
+Python 中有三种控制流语句—— if for 和 while
+
+if 语句
+if 语句用以检查条件：如果 条件为真（True），我们将运行一块语句（称作 if-block 或 if
+块），否则 我们将运行另一块语句（称作 else-block 或 else 块）。其中 else 从句是可选
+的。
+
+if.py
+
+
+
+while 语句
+while 语句能够让你在条件为真的前提下重复执行某块语句。 while 语句是 循环
+（Looping） 语句的一种。 while 语句同样可以拥有 else 子句作为可选选项。
+
+while.py
+
+
+
+for 循环
+for...in 语句是另一种循环语句，其特点是会在一系列对象上进行迭代（Iterates），意即
+它会遍历序列中的每一个项目。我们将在后面的序列（Sequences）章节中了解有关它的更
+多内容。现在你所需要的就是所谓队列就是一系列项目的有序集合。
+
+for.py
+
+
+
+break 语句
+break 语句用以中断（Break）循环语句，也就是中止循环语句的执行，即使循环条件没有
+变更为 False ，或队列中的项目尚未完全迭代依旧如此。
+
+break.py
+
+
+
+continue 语句
+continue 语句用以告诉 Python 跳过当前循环块中的剩余语句，并继续该循环的下一次迭
+代。
+
+continue.py
+
+
+
+函数
+函数（Functions）是指可重复使用的程序片段。它们允许你为某个代码块赋予名字，允许你
+通过这一特殊的名字在你的程序任何地方来运行代码块，并可重复任何次数。这就是所谓的
+调用（Calling）函数。
+
+函数可以通过关键字 def 来定义
+
+function.py
+
+
+
+函数参数
+在定义函数时给定的名称称作“形参”（Parameters），在调用函数时你所提供给函数的值称作“实参”（Arguments）。
+
+function_param.py
+
+
+
+局部变量
+function_local.py
+
+
+
+global 语句
+ function_global.py
+
+
+
+默认参数值
+值是按参数所处的位置依次分配的。def func(a, b=5) 是有效的，但 def func(a=5, b) 是无效的
+function_default.py
+
+
+
+关键字参数
+function_keyword.py
+
+
+
+可变参数
+function_varargs.py
+
+
+return 语句
+function_return.py
+
+
+
+DocStrings
+Python 有一个甚是优美的功能称作文档字符串（Documentation Strings），在称呼它时通常
+会使用另一个短一些的名字docstrings。DocStrings 是一款你应当使用的重要工具，它能够帮
+助你更好地记录程序并让其更加易于理解。
+function_docstring.py
