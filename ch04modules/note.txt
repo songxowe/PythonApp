@@ -71,3 +71,82 @@ $ python
 包是一种能够方便地分层组织模块的方式
 
 
+
+
+数据结构
+数据结构（Data Structures）是用来存储一系列相关数据的集合
+
+Python 中有四种内置的数据结构——列表（List）、元组（Tuple）、字典（Dictionary）和集合（Set）。
+
+列表
+列表 是一种用于保存一系列有序项目的集合，也就是说，你可以利用列表保存一串项目的序列。
+列表是一种可变的（Mutable）数据类型，意即，这种类型是可以被改变的
+
+ds_using_list.py
+
+
+元组
+元组（Tuple）用于将多个对象保存到一起
+
+ds_using_tuple.py
+
+
+字典
+字典就像一本地址簿,将键值（Keys）（即姓名）与值（Values）联立到一起。
+
+ds_using_dict.py
+
+
+序列
+列表、元组和字符串可以看作序列（Sequence）的某种表现形式
+
+序列的主要功能是资格测试（Membership Test）（也就是 in 与 not in 表达式）和索引
+操作（Indexing Operations），它们能够允许我们直接获取序列中的特定项目。
+
+ds_seq.py
+
+
+集合
+集合（Set）是简单对象的无序集合（Collection）。当集合中的项目存在与否比起次序或其出
+现次数更加重要时，我们就会使用集合。
+
+>>> bri = set(['brazil', 'russia', 'india'])
+>>> 'india' in bri
+True
+>>> 'usa' in bri
+False
+>>> bric = bri.copy()
+>>> bric.add('china')
+>>> bric.issuperset(bri)
+True
+>>> bri.remove('russia')
+>>> bri & bric # OR bri.intersection(bric)
+{'brazil', 'india'}
+
+
+
+引用
+当你创建了一个对象并将其分配给某个变量时，变量只会查阅（Refer）某个对象，并且它也
+不会代表对象本身。也就是说，变量名只是指向你计算机内存中存储了相应对象的那一部
+分。这叫作将名称绑定（Binding）给那一个对象
+
+ds_reference.py
+
+
+字符串方法
+
+ds_str_methods.py
+
+备份文件
+backup.py
+
+软件开发流程:
+开发一款软件的流程中的各个 阶段（Phases）
+1. What/做什么（分析）
+2. How/怎么做（设计）
+3. Do It/开始做（执行）
+4. Test/测试（测试与修复错误）
+5. Use/使用（操作或开发）
+6. Maintain/维护（改进）
+
+程序是成长起来的，不是搭建出来的。 （Software is grown, not built.）
