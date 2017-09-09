@@ -6,7 +6,8 @@ import time
 # 例如在 Windows 下：
 # source = ['"C:\\My Documents"', 'C:\\Code']
 # 又例如在 Mac OS X 与 Linux 下：
-source = ['/Users/swa/notes']
+# source = ['/Users/swa/notes']
+source = ['"D:\\WebFrontend\\React']
 # 在这里要注意到我们必须在字符串中使用双引号
 # 用以括起其中包含空格的名称。
 # 2. 备份文件必须存储在一个
@@ -14,7 +15,8 @@ source = ['/Users/swa/notes']
 # 例如在 Windows 下：
 # target_dir = 'E:\\Backup'
 # 又例如在 Mac OS X 和 Linux 下：
-target_dir = '/Users/swa/backup'
+# target_dir = '/Users/swa/backup'
+target_dir = 'E:\\Backup'
 # 要记得将这里的目录地址修改至你将使用的路径
 # 如果目标目录还不存在，则进行创建
 if not os.path.exists(target_dir):
