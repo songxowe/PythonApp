@@ -2,3 +2,72 @@
 @Copyright by SONG
 
 模块 Modules
+
+编写模块的方法:
+最简单的一种便是创建一个包含函数与变量、以 .py 为后缀的文件
+另一种方法是使用撰写 Python 解释器本身的本地语言来编写模块。举例来说，你可以使用 C
+语言来撰写 Python 模块，并且在编译后，你可以通过标准 Python 解释器在你的 Python 代
+码中使用它们。
+
+module_using_sys.py
+
+
+
+模块的 __name__
+module_using_name.py
+
+
+
+自己的模块
+mymodule.py
+mymodule_demo.py
+
+
+
+dir 函数
+$ python
+>>> import sys
+
+# 给出 sys 模块中的属性名称
+>>> dir(sys)
+['__displayhook__', '__doc__',
+'argv', 'builtin_module_names',
+'version', 'version_info']
+# only few entries shown here
+
+# 给出当前模块的属性名称
+>>> dir()
+['__builtins__', '__doc__',
+'__name__', '__package__']
+
+# 创建一个新的变量 'a'
+>>> a = 5
+
+>>> dir()
+['__builtins__', '__doc__', '__name__', '__package__', 'a']
+
+# 删除或移除一个名称
+>>> del a
+
+>>> dir()
+['__builtins__', '__doc__', '__name__', '__package__']
+
+
+包 Packages
+包是指一个包含模块与一个特殊的 __init__.py 文件的文件夹，后者向 Python 表明这一文件夹是特别的，因为其包含了 Python 模块
+- <some folder present in the sys.path>/
+    - world/
+        - __init__.py
+        - asia/
+            - __init__.py
+            - india/
+                - __init__.py
+                - foo.py
+        - africa/
+            - __init__.py
+            - madagascar/
+                - __init__.py
+                - bar.py
+包是一种能够方便地分层组织模块的方式
+
+
