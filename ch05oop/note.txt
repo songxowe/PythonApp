@@ -16,3 +16,20 @@
 
 self
 特定的变量引用的是对象本身，按照惯例，它被赋予 self 这一名称
+
+oop_simplestclass.py
+
+oop_method.py
+
+oop_init.py
+
+oop_objvar.py
+
+
+
+继承
+面向对象编程的一大优点是对代码的重用（Reuse），重用的一种实现方法就是通过继承
+（Inheritance）机制。继承最好是想象成在类之间实现类型与子类型（Type and Subtype）
+关系的工具。
+
+oop_subclass.py
