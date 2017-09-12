@@ -4,3 +4,39 @@
 输入与输出
 程序会与用户产生交互
 
+用户输入内容
+io_input.py
+
+
+
+文件
+io_using_file.py
+
+
+Pickle
+Python 提供了一个叫作 Pickle 的标准模块，通过它你可以将任何纯 Python 对象存储到一
+个文件中，并在稍后将其取回。这叫作持久地（Persistently）存储对象
+io_pickle.py
+
+
+
+Unicode
+需要将 Unicode 字符串转换至一个能够被发送和接收的格式，这个格式叫作“UTF-8”
+io_unicode.py
+
+
+
+
+
+异常
+exceptions_handle.py
+
+抛出异常
+exceptions_raise.py
+
+Try ... Finally
+exceptions_finally.py
+
+
+with 语句
+exceptions_using_with.py
