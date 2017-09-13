@@ -18,3 +18,8 @@ ch06 - 输入输出 io
 Google's Python Class
 
 https://developers.google.com/edu/python/
+
+
+
+Head First Python
+
