@@ -19,3 +19,31 @@ for each_item in movies:
             print(nested_item)
     else:
         print(each_item)
+
+print("-- 多重嵌套循环 ----------------")
+for each_item in movies:
+    if isinstance(each_item, list):
+        for nested_item in each_item:
+            if isinstance(nested_item, list):
+                for deeper_item in nested_item:
+                    print(deeper_item)
+            else:
+                print(nested_item)
+    else:
+        print(each_item)
+
+# 通过函数解决
+print("-- 函数 ---------------------------------")
+
+
+def print_lol(the_list):
+    if isinstance(the_list, list):
+        for each_item in the_list:
+            # 递归
+            print_lol(each_item)
+    else:
+        print(the_list)
+
+
+# 调用函数
+print_lol(movies)
