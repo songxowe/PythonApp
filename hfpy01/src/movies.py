@@ -37,12 +37,12 @@ print("-- 函数 ---------------------------------")
 
 
 def print_lol(the_list):
-    if isinstance(the_list, list):
-        for each_item in the_list:
+    for each_item in the_list:
+        if isinstance(each_item, list):
             # 递归
             print_lol(each_item)
-    else:
-        print(the_list)
+        else:
+            print(each_item)
 
 
 # 调用函数
