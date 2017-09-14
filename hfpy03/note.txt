@@ -1,0 +1,36 @@
+
+@Copyright by SONG
+
+异常 exception:
+因运行时错误而出现,会产生一个 traceback.
+
+traceback 是出现的运行时错误的一个详细描述
+
+使用 open() 方法 BIF 打开一个磁盘文件,创建一个迭代器从文件读取数据,一次读取一个数据行
+
+readline() 方法从一个打开的文件读取一行数据
+
+seek() 方法可以用来将文件"退回"到起始位置
+
+close() 方法关闭一个之前打开的文件
+
+split() 方法可以将一个字符串分解为一个子串列表
+
+find() 方法会在一个字符串中查找一个特定子串
+
+help() 方法 BIF 允许在 IDL shell 中访问 Python 的文档
+
+
+
+not 关键字将一个条件取反
+
+try / except 语句提供了一个异常处理机制,从而保护可能导致运行时错误的某些代码行
+
+pass 语句是 Python 的空语句或 null 语句,什么也不做
+
+
+
+
+数据不符合期望的格式时会出现 ValueError
+
+数据无法正常访问时会出现 IOError
