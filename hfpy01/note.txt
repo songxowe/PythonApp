@@ -2,7 +2,7 @@
 @Copyright by SONG
 
 Python 术语:
-BIF: 内置函数
+BIF: 内置函数 built-in functions
 Suite 组: Python 代码块,会通过缩进来指示分组
 
 标识符是指示数据对象的名字.标识符没有"类型",不过标识符所指示的数据对象有类型
