@@ -21,8 +21,14 @@ def get_coach_data(filename):
 
 sarah = get_coach_data('sarah2.txt')
 
-# pop(0) 调用将删除并返回列表最前面的数据项.两个 pop(0) 调用会删除前两个数据值,并把它们赋给指定的变量
-(sarah_name, sarah_dob) = sarah.pop(0), sarah.pop(0)
+# 字典是一个内置的数据结构,允许将数据与键而不是数字关联,可以使内存中数据与实际数据的结构保持一致
+# 创建一个空字典
+sarah_data = {}
+# 通过文件数据与字典键关联来填充字典
+sarah_data['Name'] = sarah.pop(0)
+sarah_data['DOB'] = sarah.pop(0)
+sarah_data['Times'] = sarah
 
-print(sarah_name + "'s fastest times are: " +
-      str(sorted(set([sanitize(t) for t in sarah]))[0:3]))
+# 处理数据时引用字典
+print(sarah_data['Name'] + "'s fastest times are: " +
+      str(sorted(set([sanitize(t) for t in sarah_data['Times']]))[0:3]))
