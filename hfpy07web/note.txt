@@ -1,2 +1,5 @@
 
 Python for Android
+
+Scripting Layer for Android (SL4A)
+https://github.com/damonkohler/sl4a
