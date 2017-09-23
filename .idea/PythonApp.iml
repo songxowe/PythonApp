@@ -17,6 +17,8 @@
       <sourceFolder url="file://$MODULE_DIR$/hfpy06web/src/cgi-bin" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/hfpy07web/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/hfpy07web/src/cgi-bin" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/hfpy08form/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/hfpy08form/src/cgi-bin" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
