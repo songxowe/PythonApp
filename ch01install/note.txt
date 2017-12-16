@@ -11,6 +11,8 @@ Python 是一款易于学习且功能强大的编程语言。 它具有高效率
 Python 的创造者吉多·范罗苏姆（Guido van Rossum）
 Python = 蟒蛇
 
+人生苦短, 我用Python: Life is short, you need Python
+
 Python 的特色:
 简单
 易于学习
