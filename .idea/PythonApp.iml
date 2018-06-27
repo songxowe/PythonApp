@@ -19,8 +19,11 @@
       <sourceFolder url="file://$MODULE_DIR$/hfpy07web/src/cgi-bin" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/hfpy08form/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/hfpy08form/src/cgi-bin" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/pydemo/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ch00python/src" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="Python 3.6 (PythonApp)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="TestRunnerService">
