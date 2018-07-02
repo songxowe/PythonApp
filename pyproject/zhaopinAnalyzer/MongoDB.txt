@@ -1,0 +1,159 @@
+
+
+@Copyright by SONG
+
+MongoDB
+
+NoSQL 概述
+MongoDB 安装
+MongoDB 使用
+CRUD 操作
+
+
+NoSQL:Not Only SQL
+
+数据存储方案:
+应用程序存储和检索数据有以下三种方案
+文件系统直接存储
+关系型数据库
+NoSQL 数据库（是对非关系型数据库的统称）
+
+最重要的差别是 NoSQL 不使用 SQL 作为查询语言。
+数据存储可以不需要固定的表格模式（行和列），避免使用SQL的JOIN操作，有更高的性能及水平可扩展性的特征。
+NoSQL 在 ACID（原子性、一致性、隔离性、持久性） 的支持方面没有传统关系型数据完整。
+
+文档数据库   MongoDB / CouchDB
+键／值数据库 redis   / Cassandra
+列数据库     Hbase   / Cassandra
+图数据库     Neo4J
+
+
+
+MongoDB 基于文档存储模型，数据对象以BSON（二进制 JSON）格式被存储在集合的文档中，而不是关系数据库的行和列中。
+
+集合
+使用集合将数据编组，是一组用途相同的文档，类似表的概念，但集合不受模式的限制，在其中的文档格式可以不同。
+
+文档
+文档表示单个实体数据，类似一条记录（行）；与行的差别：行的数据是扁平的，每一列只有一个值，而文档中可以包含子文档，提供的数据模型与应用程序的会更加一致。
+
+
+一个文档 Demo:
+{
+  name:'X Fimaly'
+  address: ['NY','LA']
+  person: [{'name':'Jack'},{'name':'Rose'}]
+}
+
+
+
+安装 MongoDB
+官网:https://www.mongodb.com/
+
+下载社区版:mongodb-win32-x86_64-3.4.9-signed.msi
+
+设置环境变量:
+把安装目录 mongodb/bin 添加到系统 path 中
+...;D:\Program Files\MongoDB\Server\3.4\bin
+
+cmd:
+  mongo --help
+  mongo --version
+
+  tips:出错 缺少 api-ms-win-crt-runtime-xxx.dll 则安装 vc_redist.x64.exe
+
+创建一个存放数据的目录如：D:/Oracle/MongoDB/data
+从命令行执行 mongod --dbpath D:/Oracle/MongoDB/data 启动服务器 [不能关闭]
+从命令行执行 mongo 启动交互窗口（mongoDB shell）
+
+
+
+MongoDB 使用:
+数据库:
+启动 mongo shell  [相当于 mongo 客户端]
+
+显示数据库
+>show dbs
+
+切换数据库（若不存在则创建数据库）
+>use employee [相当于 mongo 的一个数据库]
+
+显示当前使用的数据库
+>db
+
+删除当前数据库
+  db.dropDatabase()
+
+
+
+Collection(集合):
+显示所有集合
+>show collections
+
+创建一个集合
+db.createCollection('emps') [相当于一张表 emps]
+
+删除一个集合
+  db.emps.drop()
+
+
+
+MongoDB CRUD:
+插入一个文档
+db.collection.insertOne()
+db.emps.insertOne({name:'SMITH',age:27})
+
+插入多个文档
+db.collection.insertMany()
+db.emps.insertMany([{name:'SCOTT',age:26},{name:'KING',age:24,phone:['155','186']}])
+
+查询（检索文档）
+db.emps.find()
+
+name 是 KING
+db.emps.find({name:'KING'})
+
+age 大于 25
+db.emps.find({age:{$gt:25}})
+
+age 小于 25 且 name 是 KING
+db.emps.find({age:{$lt:25},name:'KING'})
+
+电话号码为 186
+db.emps.find({phone:'186'})
+
+
+
+更新一个文档
+db.collection.updateOne()
+更新多个文档
+db.collection.updateMany()
+
+db.emps.updateOne(
+	{name:'SCOTT'},	// 更新的条件
+	{$set:{age:19}}	// 新的数据
+)
+
+// update 时新增字段
+db.emps.updateOne(
+	{name:'SMITH'},
+  {$set:{phoneabc:'186'}}
+)
+
+
+
+删除一个文档
+db.collection.deleteOne()
+删除多个文档
+db.collection.deleteMany()
+
+db.emps.deleteOne({name:'SCOTT'})
+db.emps.deleteMany({age:{$lt:30}})
+
+
+
+总结:
+什么是 NoSQL
+MongoDB 中的集合是什么
+MongoDB 中的文档是什么
+CRUD 方法是什么
